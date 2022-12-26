@@ -1,4 +1,5 @@
 class MainClass():
+
     def __init__(self):
         self.data = {
             "a": "y",
@@ -6,11 +7,12 @@ class MainClass():
             "c": "s",
         }
 
-    def decode(self,_input):
+    def decode(self,input_):
         finalString = ""
-        for x in _input:
+        for x in input_:
             finalString += self.data[x]
         return finalString
 
 main = MainClass()
-print(main.decode("bca"))
+print(main.decode("abc"))
+# code
